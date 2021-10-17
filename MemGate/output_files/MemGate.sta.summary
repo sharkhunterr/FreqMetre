@@ -1,0 +1,41 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Gate'
+Slack : -1.045
+TNS   : -12.755
+
+Type  : Slow 1200mV 85C Model Hold 'Gate'
+Slack : 0.720
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Gate'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'Gate'
+Slack : -0.892
+TNS   : -10.826
+
+Type  : Slow 1200mV 0C Model Hold 'Gate'
+Slack : 0.676
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Gate'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Setup 'Gate'
+Slack : -0.615
+TNS   : -7.735
+
+Type  : Fast 1200mV 0C Model Hold 'Gate'
+Slack : 0.949
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Gate'
+Slack : -3.000
+TNS   : -3.000
+
+------------------------------------------------------------

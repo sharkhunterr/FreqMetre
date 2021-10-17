@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Quartus/FrequenceMetre/InvertValue/simulation/qsim
+vInvertValue
+Z0 !s110 1634460728
+!i10b 1
+!s100 J?AeNNSKgj@K=`UGh3e@N3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I_<[biPeZNMH7Hm[POGl7m1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Quartus_work/InvertValue/simulation/qsim
+w1634460727
+8InvertValue.vo
+FInvertValue.vo
+!i122 2
+L0 32 10722
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1634460728.000000
+!s107 InvertValue.vo|
+!s90 -work|work|InvertValue.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@invert@value
+vInvertValue_vlg_vec_tst
+R0
+!i10b 1
+!s100 `I>M3aXknEFfYN[^9:j=W2
+R1
+I=gOGR@ICi4_^ADTMKPa423
+R2
+R3
+w1634460726
+8InvertValue.vwf.vt
+FInvertValue.vwf.vt
+!i122 3
+L0 30 128
+R4
+r1
+!s85 0
+31
+R5
+!s107 InvertValue.vwf.vt|
+!s90 -work|work|InvertValue.vwf.vt|
+!i113 1
+R6
+R7
+n@invert@value_vlg_vec_tst

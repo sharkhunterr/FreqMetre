@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Quartus_work/FrequenceMetre_schema/CptXBits/simulation/qsim
+vCptXBits
+Z0 !s110 1634487041
+!i10b 1
+!s100 2fSFS?WE_Rg;gD9hz0JIA2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IcULc8YDCl8C4Hn2oHJ=G33
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Quartus_work/FreqMetre/CptXBits/simulation/qsim
+w1634487041
+8CptXBits.vo
+FCptXBits.vo
+!i122 12
+L0 32 1185
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1634487041.000000
+!s107 CptXBits.vo|
+!s90 -work|work|CptXBits.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@cpt@x@bits
+vCptXBits_vlg_vec_tst
+R0
+!i10b 1
+!s100 MUhbHR_4O:iEo9EB4iX663
+R1
+I[WW>aBU1?YK:??NoOlPb23
+R2
+R3
+w1634487040
+8CptXBits.vwf.vt
+FCptXBits.vwf.vt
+!i122 13
+L0 30 40
+R4
+r1
+!s85 0
+31
+R5
+!s107 CptXBits.vwf.vt|
+!s90 -work|work|CptXBits.vwf.vt|
+!i113 1
+R6
+R7
+n@cpt@x@bits_vlg_vec_tst

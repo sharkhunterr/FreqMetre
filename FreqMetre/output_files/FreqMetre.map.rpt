@@ -1,0 +1,883 @@
+Analysis & Synthesis report for FreqMetre
+Sun Oct 17 20:33:03 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: FreqMetre:inst|DivFreq:DivFreqForGate
+ 12. Parameter Settings for User Entity Instance: FreqMetre:inst|CptXBits:Cpt22Bits
+ 13. Parameter Settings for User Entity Instance: FreqMetre:inst|MemGate:MemFreq
+ 14. Parameter Settings for User Entity Instance: FreqMetre:inst|CalculFreq:CalculFreq
+ 15. Parameter Settings for User Entity Instance: FreqMetre:inst|InvertValue:CalculPer
+ 16. Parameter Settings for User Entity Instance: FreqMetre:inst|SelectInput:ChoixAff
+ 17. Parameter Settings for User Entity Instance: FreqMetre:inst|BinaryBcd:BinaryBcd
+ 18. Parameter Settings for User Entity Instance: FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1
+ 19. Parameter Settings for User Entity Instance: FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2
+ 20. Parameter Settings for User Entity Instance: FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3
+ 21. Parameter Settings for User Entity Instance: FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4
+ 22. Parameter Settings for User Entity Instance: FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5
+ 23. Parameter Settings for User Entity Instance: FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6
+ 24. Parameter Settings for Inferred Entity Instance: FreqMetre:inst|CalculFreq:CalculFreq|lpm_divide:Div0
+ 25. Parameter Settings for Inferred Entity Instance: FreqMetre:inst|InvertValue:CalculPer|lpm_divide:Div0
+ 26. Port Connectivity Checks: "FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6"
+ 27. Port Connectivity Checks: "FreqMetre:inst|BinaryBcd:BinaryBcd"
+ 28. Post-Synthesis Netlist Statistics for Top Partition
+ 29. Elapsed Time Per Partition
+ 30. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Oct 17 20:33:03 2021       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; FreqMetre                                   ;
+; Top-level Entity Name              ; FreqMetreSchema                             ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 1,679                                       ;
+;     Total combinational functions  ; 1,679                                       ;
+;     Dedicated logic registers      ; 23                                          ;
+; Total registers                    ; 23                                          ;
+; Total pins                         ; 47                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; FreqMetreSchema    ; FreqMetre          ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
+; FreqMetreSchema.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Quartus/Final/FreqMetre/FreqMetre/FreqMetreSchema.bdf                   ;         ;
+; ../SelectOutput/SelectOutput.v   ; yes             ; User Verilog HDL File              ; C:/Quartus/Final/FreqMetre/SelectOutput/SelectOutput.v                     ;         ;
+; ../SelectInput/SelectInput.v     ; yes             ; User Verilog HDL File              ; C:/Quartus/Final/FreqMetre/SelectInput/SelectInput.v                       ;         ;
+; ../MemGate/MemGate.v             ; yes             ; User Verilog HDL File              ; C:/Quartus/Final/FreqMetre/MemGate/MemGate.v                               ;         ;
+; ../InvertValue/InvertValue.v     ; yes             ; User Verilog HDL File              ; C:/Quartus/Final/FreqMetre/InvertValue/InvertValue.v                       ;         ;
+; ../DivFreq/DivFreq.v             ; yes             ; User Verilog HDL File              ; C:/Quartus/Final/FreqMetre/DivFreq/DivFreq.v                               ;         ;
+; ../CptXBits/CptXBits.v           ; yes             ; User Verilog HDL File              ; C:/Quartus/Final/FreqMetre/CptXBits/CptXBits.v                             ;         ;
+; ../CalculFreq/CalculFreq.v       ; yes             ; User Verilog HDL File              ; C:/Quartus/Final/FreqMetre/CalculFreq/CalculFreq.v                         ;         ;
+; ../BinaryBcd/BinaryBcd.v         ; yes             ; User Verilog HDL File              ; C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v                           ;         ;
+; ../Aff7SegBcd/Aff7SegBcd.v       ; yes             ; User Verilog HDL File              ; C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v                         ;         ;
+; FreqMetre.v                      ; yes             ; User Verilog HDL File              ; C:/Quartus/Final/FreqMetre/FreqMetre/FreqMetre.v                           ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc      ;         ;
+; db/lpm_divide_jkm.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Quartus/Final/FreqMetre/FreqMetre/db/lpm_divide_jkm.tdf                 ;         ;
+; db/sign_div_unsign_bnh.tdf       ; yes             ; Auto-Generated Megafunction        ; C:/Quartus/Final/FreqMetre/FreqMetre/db/sign_div_unsign_bnh.tdf            ;         ;
+; db/alt_u_div_aaf.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/Quartus/Final/FreqMetre/FreqMetre/db/alt_u_div_aaf.tdf                  ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/Quartus/Final/FreqMetre/FreqMetre/db/add_sub_7pc.tdf                    ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction        ; C:/Quartus/Final/FreqMetre/FreqMetre/db/add_sub_8pc.tdf                    ;         ;
+; db/lpm_divide_gkm.tdf            ; yes             ; Auto-Generated Megafunction        ; C:/Quartus/Final/FreqMetre/FreqMetre/db/lpm_divide_gkm.tdf                 ;         ;
+; db/sign_div_unsign_7nh.tdf       ; yes             ; Auto-Generated Megafunction        ; C:/Quartus/Final/FreqMetre/FreqMetre/db/sign_div_unsign_7nh.tdf            ;         ;
+; db/alt_u_div_2af.tdf             ; yes             ; Auto-Generated Megafunction        ; C:/Quartus/Final/FreqMetre/FreqMetre/db/alt_u_div_2af.tdf                  ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                ;
++---------------------------------------------+----------------------------------------------+
+; Resource                                    ; Usage                                        ;
++---------------------------------------------+----------------------------------------------+
+; Estimated Total logic elements              ; 1,679                                        ;
+;                                             ;                                              ;
+; Total combinational functions               ; 1679                                         ;
+; Logic element usage by number of LUT inputs ;                                              ;
+;     -- 4 input functions                    ; 771                                          ;
+;     -- 3 input functions                    ; 784                                          ;
+;     -- <=2 input functions                  ; 124                                          ;
+;                                             ;                                              ;
+; Logic elements by mode                      ;                                              ;
+;     -- normal mode                          ; 1082                                         ;
+;     -- arithmetic mode                      ; 597                                          ;
+;                                             ;                                              ;
+; Total registers                             ; 23                                           ;
+;     -- Dedicated logic registers            ; 23                                           ;
+;     -- I/O registers                        ; 0                                            ;
+;                                             ;                                              ;
+; I/O pins                                    ; 47                                           ;
+;                                             ;                                              ;
+; Embedded Multiplier 9-bit elements          ; 0                                            ;
+;                                             ;                                              ;
+; Maximum fan-out node                        ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ;
+; Maximum fan-out                             ; 67                                           ;
+; Total fan-out                               ; 5753                                         ;
+; Average fan-out                             ; 3.20                                         ;
++---------------------------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                  ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                   ; Entity Name         ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |FreqMetreSchema                             ; 1679 (0)            ; 23 (0)                    ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |FreqMetreSchema                                                                                                                                      ; FreqMetreSchema     ; work         ;
+;    |FreqMetre:inst|                          ; 1679 (0)            ; 23 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst                                                                                                                       ; FreqMetre           ; work         ;
+;       |Aff7SegBcd:Aff7SegBcd1|               ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1                                                                                                ; Aff7SegBcd          ; work         ;
+;       |Aff7SegBcd:Aff7SegBcd2|               ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2                                                                                                ; Aff7SegBcd          ; work         ;
+;       |Aff7SegBcd:Aff7SegBcd3|               ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3                                                                                                ; Aff7SegBcd          ; work         ;
+;       |Aff7SegBcd:Aff7SegBcd4|               ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4                                                                                                ; Aff7SegBcd          ; work         ;
+;       |Aff7SegBcd:Aff7SegBcd5|               ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5                                                                                                ; Aff7SegBcd          ; work         ;
+;       |Aff7SegBcd:Aff7SegBcd6|               ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6                                                                                                ; Aff7SegBcd          ; work         ;
+;       |BinaryBcd:BinaryBcd|                  ; 275 (275)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|BinaryBcd:BinaryBcd                                                                                                   ; BinaryBcd           ; work         ;
+;       |CalculFreq:CalculFreq|                ; 716 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|CalculFreq:CalculFreq                                                                                                 ; CalculFreq          ; work         ;
+;          |lpm_divide:Div0|                   ; 716 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|CalculFreq:CalculFreq|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;             |lpm_divide_jkm:auto_generated|  ; 716 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|CalculFreq:CalculFreq|lpm_divide:Div0|lpm_divide_jkm:auto_generated                                                   ; lpm_divide_jkm      ; work         ;
+;                |sign_div_unsign_bnh:divider| ; 716 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|CalculFreq:CalculFreq|lpm_divide:Div0|lpm_divide_jkm:auto_generated|sign_div_unsign_bnh:divider                       ; sign_div_unsign_bnh ; work         ;
+;                   |alt_u_div_aaf:divider|    ; 716 (716)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|CalculFreq:CalculFreq|lpm_divide:Div0|lpm_divide_jkm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_aaf:divider ; alt_u_div_aaf       ; work         ;
+;       |CptXBits:Cpt22Bits|                   ; 22 (22)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|CptXBits:Cpt22Bits                                                                                                    ; CptXBits            ; work         ;
+;       |DivFreq:DivFreqForGate|               ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|DivFreq:DivFreqForGate                                                                                                ; DivFreq             ; work         ;
+;       |InvertValue:CalculPer|                ; 510 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|InvertValue:CalculPer                                                                                                 ; InvertValue         ; work         ;
+;          |lpm_divide:Div0|                   ; 510 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|InvertValue:CalculPer|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;             |lpm_divide_gkm:auto_generated|  ; 510 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|InvertValue:CalculPer|lpm_divide:Div0|lpm_divide_gkm:auto_generated                                                   ; lpm_divide_gkm      ; work         ;
+;                |sign_div_unsign_7nh:divider| ; 510 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|InvertValue:CalculPer|lpm_divide:Div0|lpm_divide_gkm:auto_generated|sign_div_unsign_7nh:divider                       ; sign_div_unsign_7nh ; work         ;
+;                   |alt_u_div_2af:divider|    ; 510 (510)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|InvertValue:CalculPer|lpm_divide:Div0|lpm_divide_gkm:auto_generated|sign_div_unsign_7nh:divider|alt_u_div_2af:divider ; alt_u_div_2af       ; work         ;
+;       |MemGate:MemFreq|                      ; 44 (44)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|MemGate:MemFreq                                                                                                       ; MemGate             ; work         ;
+;       |SelectInput:ChoixAff|                 ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FreqMetreSchema|FreqMetre:inst|SelectInput:ChoixAff                                                                                                  ; SelectInput         ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                         ;
++-----------------------------------------------------+----------------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                          ; Free of Timing Hazards ;
++-----------------------------------------------------+----------------------------------------------+------------------------+
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[6]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[5]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[4]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[3]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[2]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[1]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[0]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[6]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[5]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[4]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[3]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[2]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[1]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[0]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[6]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[5]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[4]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[3]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[2]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[1]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[0]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[6]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[5]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[4]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[3]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[2]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[1]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[0]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[6]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[5]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[4]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[3]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[2]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[1]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[0]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[6]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[5]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[4]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[3]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[2]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[1]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|Mux1   ; yes                    ;
+; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[0]       ; FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|Mux1   ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[5]               ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[6]               ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[7]               ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[8]               ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[9]               ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[10]              ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[11]              ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[12]              ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[13]              ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[14]              ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[15]              ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[16]              ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[17]              ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[18]              ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[19]              ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[20]              ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[21]              ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[5]           ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[6]           ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[7]           ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[8]           ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[9]           ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[10]          ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[11]          ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[12]          ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[13]          ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[14]          ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[15]          ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[16]          ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[17]          ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[18]          ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[19]          ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[20]          ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[21]          ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[4]               ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[0]               ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[1]               ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[2]               ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Out[3]               ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[4]           ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[0]           ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[1]           ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[2]           ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; FreqMetre:inst|MemGate:MemFreq|Memoire[3]           ; FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ; yes                    ;
+; Number of user-specified and inferred latches = 86  ;                                              ;                        ;
++-----------------------------------------------------+----------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                      ;
++----------------------------------------------+----------------------------------------------------------+
+; Register name                                ; Reason for Removal                                       ;
++----------------------------------------------+----------------------------------------------------------+
+; FreqMetre:inst|DivFreq:DivFreqForGate|Cnt[0] ; Merged with FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut ;
+; Total Number of Removed Registers = 1        ;                                                          ;
++----------------------------------------------+----------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 23    ;
+; Number of registers using Synchronous Clear  ; 22    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqMetre:inst|DivFreq:DivFreqForGate ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; NBT            ; 1     ; Signed Integer                                            ;
+; NBTON          ; 1     ; Signed Integer                                            ;
+; POLARITY       ; 1     ; Signed Integer                                            ;
+; BUS_SIZE       ; 1     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqMetre:inst|CptXBits:Cpt22Bits ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; BUS_SIZE       ; 22    ; Signed Integer                                        ;
+; POLARITY       ; 1     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqMetre:inst|MemGate:MemFreq ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; BUS_SIZE       ; 22    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqMetre:inst|CalculFreq:CalculFreq ;
++----------------+----------+-------------------------------------------------------+
+; Parameter Name ; Value    ; Type                                                  ;
++----------------+----------+-------------------------------------------------------+
+; BUS_SIZE       ; 22       ; Signed Integer                                        ;
+; COEF_NUM       ; 50000000 ; Signed Integer                                        ;
++----------------+----------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqMetre:inst|InvertValue:CalculPer ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; BUS_SIZE       ; 22    ; Signed Integer                                           ;
+; COEF_NUM       ; 10000 ; Signed Integer                                           ;
+; COEF_DEN       ; 1     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqMetre:inst|SelectInput:ChoixAff ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; BUS_SIZE       ; 22    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqMetre:inst|BinaryBcd:BinaryBcd ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; BUS_BIN        ; 22    ; Signed Integer                                         ;
+; BUS_BCD        ; 28    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1 ;
++-----------------+-------+----------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                     ;
++-----------------+-------+----------------------------------------------------------+
+; OUTPUT_POLARITY ; 0     ; Signed Integer                                           ;
++-----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2 ;
++-----------------+-------+----------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                     ;
++-----------------+-------+----------------------------------------------------------+
+; OUTPUT_POLARITY ; 0     ; Signed Integer                                           ;
++-----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3 ;
++-----------------+-------+----------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                     ;
++-----------------+-------+----------------------------------------------------------+
+; OUTPUT_POLARITY ; 0     ; Signed Integer                                           ;
++-----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4 ;
++-----------------+-------+----------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                     ;
++-----------------+-------+----------------------------------------------------------+
+; OUTPUT_POLARITY ; 0     ; Signed Integer                                           ;
++-----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5 ;
++-----------------+-------+----------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                     ;
++-----------------+-------+----------------------------------------------------------+
+; OUTPUT_POLARITY ; 0     ; Signed Integer                                           ;
++-----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6 ;
++-----------------+-------+----------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                     ;
++-----------------+-------+----------------------------------------------------------+
+; OUTPUT_POLARITY ; 0     ; Signed Integer                                           ;
++-----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: FreqMetre:inst|CalculFreq:CalculFreq|lpm_divide:Div0 ;
++------------------------+----------------+-------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                        ;
++------------------------+----------------+-------------------------------------------------------------+
+; LPM_WIDTHN             ; 26             ; Untyped                                                     ;
+; LPM_WIDTHD             ; 22             ; Untyped                                                     ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                     ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                     ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                     ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                     ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                     ;
+; CBXI_PARAMETER         ; lpm_divide_jkm ; Untyped                                                     ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                     ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                     ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                              ;
++------------------------+----------------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: FreqMetre:inst|InvertValue:CalculPer|lpm_divide:Div0 ;
++------------------------+----------------+-------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                        ;
++------------------------+----------------+-------------------------------------------------------------+
+; LPM_WIDTHN             ; 14             ; Untyped                                                     ;
+; LPM_WIDTHD             ; 22             ; Untyped                                                     ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                                     ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                                     ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                     ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                                     ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                     ;
+; CBXI_PARAMETER         ; lpm_divide_gkm ; Untyped                                                     ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                     ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                     ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                              ;
++------------------------+----------------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6"                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Byte ; Input ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FreqMetre:inst|BinaryBcd:BinaryBcd"                                                                                           ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                    ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; bcd     ; Output ; Warning  ; Output or bidir port (28 bits) is wider than the port expression (25 bits) it drives; bit(s) "bcd[27..25]" have no fanouts ;
+; bcd[27] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 47                          ;
+; cycloneiii_ff         ; 23                          ;
+;     SCLR              ; 22                          ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 1722                        ;
+;     arith             ; 597                         ;
+;         2 data inputs ; 52                          ;
+;         3 data inputs ; 545                         ;
+;     normal            ; 1125                        ;
+;         0 data inputs ; 44                          ;
+;         1 data inputs ; 45                          ;
+;         2 data inputs ; 26                          ;
+;         3 data inputs ; 239                         ;
+;         4 data inputs ; 771                         ;
+;                       ;                             ;
+; Max LUT depth         ; 150.80                      ;
+; Average LUT depth     ; 129.81                      ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Sun Oct 17 20:32:52 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FreqMetre -c FreqMetre
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file freqmetreschema.bdf
+    Info (12023): Found entity 1: FreqMetreSchema
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus/final/freqmetre/selectoutput/selectoutput.v
+    Info (12023): Found entity 1: SelectOutput File: C:/Quartus/Final/FreqMetre/SelectOutput/SelectOutput.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus/final/freqmetre/selectinput/selectinput.v
+    Info (12023): Found entity 1: SelectInput File: C:/Quartus/Final/FreqMetre/SelectInput/SelectInput.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus/final/freqmetre/memgate/memgate.v
+    Info (12023): Found entity 1: MemGate File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus/final/freqmetre/invertvalue/invertvalue.v
+    Info (12023): Found entity 1: InvertValue File: C:/Quartus/Final/FreqMetre/InvertValue/InvertValue.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus/final/freqmetre/divfreq/divfreq.v
+    Info (12023): Found entity 1: DivFreq File: C:/Quartus/Final/FreqMetre/DivFreq/DivFreq.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus/final/freqmetre/cptxbits/cptxbits.v
+    Info (12023): Found entity 1: CptXBits File: C:/Quartus/Final/FreqMetre/CptXBits/CptXBits.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus/final/freqmetre/calculfreq/calculfreq.v
+    Info (12023): Found entity 1: CalculFreq File: C:/Quartus/Final/FreqMetre/CalculFreq/CalculFreq.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus/final/freqmetre/binarybcd/binarybcd.v
+    Info (12023): Found entity 1: BinaryBcd File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /quartus/final/freqmetre/aff7segbcd/aff7segbcd.v
+    Info (12023): Found entity 1: Aff7SegBcd File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file freqmetre.v
+    Info (12023): Found entity 1: FreqMetre File: C:/Quartus/Final/FreqMetre/FreqMetre/FreqMetre.v Line: 1
+Info (12127): Elaborating entity "FreqMetreSchema" for the top level hierarchy
+Info (12128): Elaborating entity "FreqMetre" for hierarchy "FreqMetre:inst"
+Info (12128): Elaborating entity "DivFreq" for hierarchy "FreqMetre:inst|DivFreq:DivFreqForGate" File: C:/Quartus/Final/FreqMetre/FreqMetre/FreqMetre.v Line: 24
+Warning (10230): Verilog HDL assignment warning at DivFreq.v(18): truncated value with size 32 to match size of target (1) File: C:/Quartus/Final/FreqMetre/DivFreq/DivFreq.v Line: 18
+Warning (10230): Verilog HDL assignment warning at DivFreq.v(26): truncated value with size 32 to match size of target (1) File: C:/Quartus/Final/FreqMetre/DivFreq/DivFreq.v Line: 26
+Warning (10230): Verilog HDL assignment warning at DivFreq.v(30): truncated value with size 32 to match size of target (1) File: C:/Quartus/Final/FreqMetre/DivFreq/DivFreq.v Line: 30
+Info (12128): Elaborating entity "CptXBits" for hierarchy "FreqMetre:inst|CptXBits:Cpt22Bits" File: C:/Quartus/Final/FreqMetre/FreqMetre/FreqMetre.v Line: 27
+Warning (10230): Verilog HDL assignment warning at CptXBits.v(18): truncated value with size 32 to match size of target (22) File: C:/Quartus/Final/FreqMetre/CptXBits/CptXBits.v Line: 18
+Info (12128): Elaborating entity "MemGate" for hierarchy "FreqMetre:inst|MemGate:MemFreq" File: C:/Quartus/Final/FreqMetre/FreqMetre/FreqMetre.v Line: 30
+Warning (10235): Verilog HDL Always Construct warning at MemGate.v(16): variable "In" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 16
+Warning (10235): Verilog HDL Always Construct warning at MemGate.v(20): variable "Memoire" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 20
+Warning (10240): Verilog HDL Always Construct warning at MemGate.v(12): inferring latch(es) for variable "Memoire", which holds its previous value in one or more paths through the always construct File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Warning (10240): Verilog HDL Always Construct warning at MemGate.v(12): inferring latch(es) for variable "Out", which holds its previous value in one or more paths through the always construct File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[0]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[1]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[2]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[3]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[4]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[5]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[6]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[7]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[8]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[9]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[10]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[11]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[12]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[13]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[14]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[15]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[16]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[17]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[18]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[19]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[20]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Out[21]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[0]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[1]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[2]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[3]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[4]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[5]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[6]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[7]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[8]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[9]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[10]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[11]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[12]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[13]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[14]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[15]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[16]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[17]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[18]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[19]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[20]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (10041): Inferred latch for "Memoire[21]" at MemGate.v(12) File: C:/Quartus/Final/FreqMetre/MemGate/MemGate.v Line: 12
+Info (12128): Elaborating entity "CalculFreq" for hierarchy "FreqMetre:inst|CalculFreq:CalculFreq" File: C:/Quartus/Final/FreqMetre/FreqMetre/FreqMetre.v Line: 33
+Warning (10230): Verilog HDL assignment warning at CalculFreq.v(12): truncated value with size 32 to match size of target (22) File: C:/Quartus/Final/FreqMetre/CalculFreq/CalculFreq.v Line: 12
+Info (12128): Elaborating entity "InvertValue" for hierarchy "FreqMetre:inst|InvertValue:CalculPer" File: C:/Quartus/Final/FreqMetre/FreqMetre/FreqMetre.v Line: 34
+Warning (10230): Verilog HDL assignment warning at InvertValue.v(14): truncated value with size 32 to match size of target (22) File: C:/Quartus/Final/FreqMetre/InvertValue/InvertValue.v Line: 14
+Info (12128): Elaborating entity "SelectInput" for hierarchy "FreqMetre:inst|SelectInput:ChoixAff" File: C:/Quartus/Final/FreqMetre/FreqMetre/FreqMetre.v Line: 37
+Warning (10235): Verilog HDL Always Construct warning at SelectInput.v(17): variable "In1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Quartus/Final/FreqMetre/SelectInput/SelectInput.v Line: 17
+Warning (10235): Verilog HDL Always Construct warning at SelectInput.v(21): variable "In2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Quartus/Final/FreqMetre/SelectInput/SelectInput.v Line: 21
+Info (12128): Elaborating entity "BinaryBcd" for hierarchy "FreqMetre:inst|BinaryBcd:BinaryBcd" File: C:/Quartus/Final/FreqMetre/FreqMetre/FreqMetre.v Line: 40
+Warning (10230): Verilog HDL assignment warning at BinaryBcd.v(15): truncated value with size 32 to match size of target (4) File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 15
+Warning (10230): Verilog HDL assignment warning at BinaryBcd.v(16): truncated value with size 32 to match size of target (4) File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 16
+Warning (10230): Verilog HDL assignment warning at BinaryBcd.v(17): truncated value with size 32 to match size of target (4) File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 17
+Warning (10230): Verilog HDL assignment warning at BinaryBcd.v(18): truncated value with size 32 to match size of target (4) File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 18
+Warning (10230): Verilog HDL assignment warning at BinaryBcd.v(19): truncated value with size 32 to match size of target (4) File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 19
+Warning (10230): Verilog HDL assignment warning at BinaryBcd.v(20): truncated value with size 32 to match size of target (4) File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 20
+Info (12128): Elaborating entity "Aff7SegBcd" for hierarchy "FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1" File: C:/Quartus/Final/FreqMetre/FreqMetre/FreqMetre.v Line: 43
+Warning (10270): Verilog HDL Case Statement warning at Aff7SegBcd.v(14): incomplete case statement has no default case item File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 14
+Warning (10240): Verilog HDL Always Construct warning at Aff7SegBcd.v(11): inferring latch(es) for variable "iAff", which holds its previous value in one or more paths through the always construct File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+Info (10041): Inferred latch for "iAff[0]" at Aff7SegBcd.v(11) File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+Info (10041): Inferred latch for "iAff[1]" at Aff7SegBcd.v(11) File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+Info (10041): Inferred latch for "iAff[2]" at Aff7SegBcd.v(11) File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+Info (10041): Inferred latch for "iAff[3]" at Aff7SegBcd.v(11) File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+Info (10041): Inferred latch for "iAff[4]" at Aff7SegBcd.v(11) File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+Info (10041): Inferred latch for "iAff[5]" at Aff7SegBcd.v(11) File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+Info (10041): Inferred latch for "iAff[6]" at Aff7SegBcd.v(11) File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+Info (12128): Elaborating entity "SelectOutput" for hierarchy "FreqMetre:inst|SelectOutput:SelectSortie" File: C:/Quartus/Final/FreqMetre/FreqMetre/FreqMetre.v Line: 51
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "FreqMetre:inst|CalculFreq:CalculFreq|Div0" File: C:/Quartus/Final/FreqMetre/CalculFreq/CalculFreq.v Line: 12
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "FreqMetre:inst|InvertValue:CalculPer|Div0" File: C:/Quartus/Final/FreqMetre/InvertValue/InvertValue.v Line: 14
+Info (12130): Elaborated megafunction instantiation "FreqMetre:inst|CalculFreq:CalculFreq|lpm_divide:Div0" File: C:/Quartus/Final/FreqMetre/CalculFreq/CalculFreq.v Line: 12
+Info (12133): Instantiated megafunction "FreqMetre:inst|CalculFreq:CalculFreq|lpm_divide:Div0" with the following parameter: File: C:/Quartus/Final/FreqMetre/CalculFreq/CalculFreq.v Line: 12
+    Info (12134): Parameter "LPM_WIDTHN" = "26"
+    Info (12134): Parameter "LPM_WIDTHD" = "22"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_jkm.tdf
+    Info (12023): Found entity 1: lpm_divide_jkm File: C:/Quartus/Final/FreqMetre/FreqMetre/db/lpm_divide_jkm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bnh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bnh File: C:/Quartus/Final/FreqMetre/FreqMetre/db/sign_div_unsign_bnh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_aaf.tdf
+    Info (12023): Found entity 1: alt_u_div_aaf File: C:/Quartus/Final/FreqMetre/FreqMetre/db/alt_u_div_aaf.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc File: C:/Quartus/Final/FreqMetre/FreqMetre/db/add_sub_7pc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc File: C:/Quartus/Final/FreqMetre/FreqMetre/db/add_sub_8pc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "FreqMetre:inst|InvertValue:CalculPer|lpm_divide:Div0" File: C:/Quartus/Final/FreqMetre/InvertValue/InvertValue.v Line: 14
+Info (12133): Instantiated megafunction "FreqMetre:inst|InvertValue:CalculPer|lpm_divide:Div0" with the following parameter: File: C:/Quartus/Final/FreqMetre/InvertValue/InvertValue.v Line: 14
+    Info (12134): Parameter "LPM_WIDTHN" = "14"
+    Info (12134): Parameter "LPM_WIDTHD" = "22"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_gkm.tdf
+    Info (12023): Found entity 1: lpm_divide_gkm File: C:/Quartus/Final/FreqMetre/FreqMetre/db/lpm_divide_gkm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_7nh File: C:/Quartus/Final/FreqMetre/FreqMetre/db/sign_div_unsign_7nh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_2af.tdf
+    Info (12023): Found entity 1: alt_u_div_2af File: C:/Quartus/Final/FreqMetre/FreqMetre/db/alt_u_div_2af.tdf Line: 27
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[6] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[5] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[4] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[3] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[2] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[1] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd1|iAff[0] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0]
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[6] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[5]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[5] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[6]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[4] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[6]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[3] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[5]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[2] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[6]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[1] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[5]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd2|iAff[0] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[5]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[6] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[9]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[5] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[10]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[4] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[10]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[3] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[9]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[2] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[10]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[1] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[9]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd3|iAff[0] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[9]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[6] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[13]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[5] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[14]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[4] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[14]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[3] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[13]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[2] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[14]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[1] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[13]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd4|iAff[0] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[13]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[6] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[17]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[5] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[18]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[4] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[18]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[3] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[17]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[2] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[18]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[1] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[17]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd5|iAff[0] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[17]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[6] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[21]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[5] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[22]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[4] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[22]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[3] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[21]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[2] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[22]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[1] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[21]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Warning (13012): Latch FreqMetre:inst|Aff7SegBcd:Aff7SegBcd6|iAff[0] has unsafe behavior File: C:/Quartus/Final/FreqMetre/Aff7SegBcd/Aff7SegBcd.v Line: 11
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal FreqMetre:inst|BinaryBcd:BinaryBcd|bcd[21]~synth File: C:/Quartus/Final/FreqMetre/BinaryBcd/BinaryBcd.v Line: 6
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1726 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 44 output pins
+    Info (21061): Implemented 1679 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 106 warnings
+    Info: Peak virtual memory: 4788 megabytes
+    Info: Processing ended: Sun Oct 17 20:33:03 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:22
+
+

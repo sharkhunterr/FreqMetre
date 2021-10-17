@@ -1,0 +1,7 @@
+|SelectOutput
+Input => Out1.DATAIN
+Input => Out2.DATAIN
+Out1 <= Input.DB_MAX_OUTPUT_PORT_TYPE
+Out2 <= Input.DB_MAX_OUTPUT_PORT_TYPE
+
+

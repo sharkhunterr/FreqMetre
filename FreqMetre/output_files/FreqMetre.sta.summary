@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'SW[0]'
+Slack : -164.835
+TNS   : -6628.575
+
+Type  : Slow 1200mV 85C Model Setup 'FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut'
+Slack : -4.387
+TNS   : -92.407
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -2.025
+TNS   : -38.778
+
+Type  : Slow 1200mV 85C Model Setup 'GPIO[0]'
+Slack : -1.671
+TNS   : -1.671
+
+Type  : Slow 1200mV 85C Model Hold 'SW[0]'
+Slack : -4.404
+TNS   : -52.327
+
+Type  : Slow 1200mV 85C Model Hold 'FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut'
+Slack : -0.121
+TNS   : -0.738
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.658
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'GPIO[0]'
+Slack : 1.603
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SW[0]'
+Slack : -14.931
+TNS   : -37632.327
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -31.270
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GPIO[0]'
+Slack : -3.000
+TNS   : -4.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'SW[0]'
+Slack : -149.015
+TNS   : -6001.033
+
+Type  : Slow 1200mV 0C Model Setup 'FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut'
+Slack : -3.833
+TNS   : -80.781
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -1.699
+TNS   : -37.038
+
+Type  : Slow 1200mV 0C Model Setup 'GPIO[0]'
+Slack : -1.495
+TNS   : -1.495
+
+Type  : Slow 1200mV 0C Model Hold 'SW[0]'
+Slack : -3.933
+TNS   : -48.709
+
+Type  : Slow 1200mV 0C Model Hold 'FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut'
+Slack : -0.060
+TNS   : -0.199
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.601
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'GPIO[0]'
+Slack : 1.477
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SW[0]'
+Slack : -13.665
+TNS   : -33976.375
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -31.270
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GPIO[0]'
+Slack : -3.000
+TNS   : -4.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'SW[0]'
+Slack : -82.056
+TNS   : -3285.633
+
+Type  : Fast 1200mV 0C Model Setup 'FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut'
+Slack : -2.196
+TNS   : -42.691
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -0.499
+TNS   : -5.107
+
+Type  : Fast 1200mV 0C Model Setup 'GPIO[0]'
+Slack : -0.221
+TNS   : -0.221
+
+Type  : Fast 1200mV 0C Model Hold 'SW[0]'
+Slack : -2.062
+TNS   : -23.400
+
+Type  : Fast 1200mV 0C Model Hold 'FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut'
+Slack : 0.095
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'GPIO[0]'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SW[0]'
+Slack : -7.625
+TNS   : -17425.827
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -27.288
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GPIO[0]'
+Slack : -3.000
+TNS   : -4.253
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FreqMetre:inst|DivFreq:DivFreqForGate|ClkOut'
+Slack : 0.231
+TNS   : 0.000
+
+------------------------------------------------------------

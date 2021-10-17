@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Quartus_work/MemGate/simulation/qsim
+vMemGate
+Z1 !s110 1634460857
+!i10b 1
+!s100 6m0o;3;_JCD;aR4I<cUQD0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ioh0[hb]Je_Z0NF>5Ghn9Y0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1634460856
+8MemGate.vo
+FMemGate.vo
+!i122 2
+L0 32 1309
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1634460857.000000
+!s107 MemGate.vo|
+!s90 -work|work|MemGate.vo|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+n@mem@gate
+vMemGate_vlg_vec_tst
+R1
+!i10b 1
+!s100 1Z29U_bLTN?2cg]`Yf9ag3
+R2
+IQa[V5Y^ca:UUhaUQ2^1VI2
+R3
+R0
+R4
+8MemGate.vwf.vt
+FMemGate.vwf.vt
+!i122 3
+L0 30 184
+R5
+r1
+!s85 0
+31
+R6
+!s107 MemGate.vwf.vt|
+!s90 -work|work|MemGate.vwf.vt|
+!i113 1
+R7
+R8
+n@mem@gate_vlg_vec_tst

@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Cpt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[15]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[16]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[17]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[18]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[19]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[20]",
+					"strict" : false
+				},
+				{
+					"name" : "Cpt[21]",
+					"strict" : false
+				},
+				{
+					"name" : "ClkRef",
+					"strict" : false
+				},
+				{
+					"name" : "Gate",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

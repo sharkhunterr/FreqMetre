@@ -1,0 +1,15 @@
+module MemGate(Gate,Buffer,PerOut)
+
+input Gate;
+input[13:0] Buffer;
+
+output[13:0] PerOut;
+reg[13:0] PerOut;
+
+always @(Gate)
+if(Gate == 1'b1)
+	begin
+		PerOut <= Buffer;
+	end
+	
+endmodule

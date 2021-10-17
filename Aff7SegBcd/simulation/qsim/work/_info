@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Quartus/FrequenceMetre/Aff7SegBcd/simulation/qsim
+vAff7SegBcd
+Z1 !s110 1634230028
+!i10b 1
+!s100 Le@H5LZmCj3HiJBM3Hc]e3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IQ=nRiOeIkmPibdiL<e@EB3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1634230026
+8Aff7SegBcd.vo
+FAff7SegBcd.vo
+!i122 0
+L0 32 414
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1634230027.000000
+!s107 Aff7SegBcd.vo|
+!s90 -work|work|Aff7SegBcd.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@aff7@seg@bcd
+vAff7SegBcd_vlg_vec_tst
+R1
+!i10b 1
+!s100 dVSDm9Sb4jU49NR31caQU2
+R2
+IIaHKEMjPG8E>KlQ1F_Pid0
+R3
+R0
+R4
+8Aff7SegBcd.vwf.vt
+FAff7SegBcd.vwf.vt
+!i122 1
+L0 30 38
+R5
+r1
+!s85 0
+31
+!s108 1634230028.000000
+!s107 Aff7SegBcd.vwf.vt|
+!s90 -work|work|Aff7SegBcd.vwf.vt|
+!i113 1
+R6
+R7
+n@aff7@seg@bcd_vlg_vec_tst

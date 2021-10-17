@@ -1,0 +1,528 @@
+$comment
+	File created using the following command:
+		vcd file MemGate.msim.vcd -direction
+$end
+$date
+	Sun Oct 17 10:54:17 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module MemGate_vlg_vec_tst $end
+$var reg 1 ! Gate $end
+$var reg 22 " In [21:0] $end
+$var wire 1 # Out [21] $end
+$var wire 1 $ Out [20] $end
+$var wire 1 % Out [19] $end
+$var wire 1 & Out [18] $end
+$var wire 1 ' Out [17] $end
+$var wire 1 ( Out [16] $end
+$var wire 1 ) Out [15] $end
+$var wire 1 * Out [14] $end
+$var wire 1 + Out [13] $end
+$var wire 1 , Out [12] $end
+$var wire 1 - Out [11] $end
+$var wire 1 . Out [10] $end
+$var wire 1 / Out [9] $end
+$var wire 1 0 Out [8] $end
+$var wire 1 1 Out [7] $end
+$var wire 1 2 Out [6] $end
+$var wire 1 3 Out [5] $end
+$var wire 1 4 Out [4] $end
+$var wire 1 5 Out [3] $end
+$var wire 1 6 Out [2] $end
+$var wire 1 7 Out [1] $end
+$var wire 1 8 Out [0] $end
+
+$scope module i1 $end
+$var wire 1 9 gnd $end
+$var wire 1 : vcc $end
+$var wire 1 ; unknown $end
+$var tri1 1 < devclrn $end
+$var tri1 1 = devpor $end
+$var tri1 1 > devoe $end
+$var wire 1 ? Out[0]~output_o $end
+$var wire 1 @ Out[1]~output_o $end
+$var wire 1 A Out[2]~output_o $end
+$var wire 1 B Out[3]~output_o $end
+$var wire 1 C Out[4]~output_o $end
+$var wire 1 D Out[5]~output_o $end
+$var wire 1 E Out[6]~output_o $end
+$var wire 1 F Out[7]~output_o $end
+$var wire 1 G Out[8]~output_o $end
+$var wire 1 H Out[9]~output_o $end
+$var wire 1 I Out[10]~output_o $end
+$var wire 1 J Out[11]~output_o $end
+$var wire 1 K Out[12]~output_o $end
+$var wire 1 L Out[13]~output_o $end
+$var wire 1 M Out[14]~output_o $end
+$var wire 1 N Out[15]~output_o $end
+$var wire 1 O Out[16]~output_o $end
+$var wire 1 P Out[17]~output_o $end
+$var wire 1 Q Out[18]~output_o $end
+$var wire 1 R Out[19]~output_o $end
+$var wire 1 S Out[20]~output_o $end
+$var wire 1 T Out[21]~output_o $end
+$var wire 1 U In[0]~input_o $end
+$var wire 1 V Gate~input_o $end
+$var wire 1 W Out[0]$latch~combout $end
+$var wire 1 X In[1]~input_o $end
+$var wire 1 Y Out[1]$latch~combout $end
+$var wire 1 Z In[2]~input_o $end
+$var wire 1 [ Out[2]$latch~combout $end
+$var wire 1 \ In[3]~input_o $end
+$var wire 1 ] Out[3]$latch~combout $end
+$var wire 1 ^ In[4]~input_o $end
+$var wire 1 _ Out[4]$latch~combout $end
+$var wire 1 ` In[5]~input_o $end
+$var wire 1 a Out[5]$latch~combout $end
+$var wire 1 b In[6]~input_o $end
+$var wire 1 c Out[6]$latch~combout $end
+$var wire 1 d In[7]~input_o $end
+$var wire 1 e Out[7]$latch~combout $end
+$var wire 1 f In[8]~input_o $end
+$var wire 1 g Out[8]$latch~combout $end
+$var wire 1 h In[9]~input_o $end
+$var wire 1 i Out[9]$latch~combout $end
+$var wire 1 j In[10]~input_o $end
+$var wire 1 k Out[10]$latch~combout $end
+$var wire 1 l In[11]~input_o $end
+$var wire 1 m Out[11]$latch~combout $end
+$var wire 1 n In[12]~input_o $end
+$var wire 1 o Out[12]$latch~combout $end
+$var wire 1 p In[13]~input_o $end
+$var wire 1 q Out[13]$latch~combout $end
+$var wire 1 r In[14]~input_o $end
+$var wire 1 s Out[14]$latch~combout $end
+$var wire 1 t In[15]~input_o $end
+$var wire 1 u Out[15]$latch~combout $end
+$var wire 1 v In[16]~input_o $end
+$var wire 1 w Out[16]$latch~combout $end
+$var wire 1 x In[17]~input_o $end
+$var wire 1 y Out[17]$latch~combout $end
+$var wire 1 z In[18]~input_o $end
+$var wire 1 { Out[18]$latch~combout $end
+$var wire 1 | In[19]~input_o $end
+$var wire 1 } Out[19]$latch~combout $end
+$var wire 1 ~ In[20]~input_o $end
+$var wire 1 !! Out[20]$latch~combout $end
+$var wire 1 "! In[21]~input_o $end
+$var wire 1 #! Out[21]$latch~combout $end
+$var wire 1 $! Memoire [21] $end
+$var wire 1 %! Memoire [20] $end
+$var wire 1 &! Memoire [19] $end
+$var wire 1 '! Memoire [18] $end
+$var wire 1 (! Memoire [17] $end
+$var wire 1 )! Memoire [16] $end
+$var wire 1 *! Memoire [15] $end
+$var wire 1 +! Memoire [14] $end
+$var wire 1 ,! Memoire [13] $end
+$var wire 1 -! Memoire [12] $end
+$var wire 1 .! Memoire [11] $end
+$var wire 1 /! Memoire [10] $end
+$var wire 1 0! Memoire [9] $end
+$var wire 1 1! Memoire [8] $end
+$var wire 1 2! Memoire [7] $end
+$var wire 1 3! Memoire [6] $end
+$var wire 1 4! Memoire [5] $end
+$var wire 1 5! Memoire [4] $end
+$var wire 1 6! Memoire [3] $end
+$var wire 1 7! Memoire [2] $end
+$var wire 1 8! Memoire [1] $end
+$var wire 1 9! Memoire [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b111101001111111100 "
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+09
+1:
+x;
+1<
+1=
+1>
+x?
+x@
+xA
+xB
+xC
+xD
+xE
+xF
+xG
+xH
+xI
+xJ
+xK
+xL
+xM
+xN
+xO
+xP
+xQ
+xR
+xS
+xT
+0U
+0V
+xW
+0X
+xY
+1Z
+x[
+1\
+x]
+1^
+x_
+1`
+xa
+1b
+xc
+1d
+xe
+1f
+xg
+1h
+xi
+0j
+xk
+0l
+xm
+1n
+xo
+0p
+xq
+1r
+xs
+1t
+xu
+1v
+xw
+1x
+xy
+0z
+x{
+0|
+x}
+0~
+x!!
+0"!
+x#!
+x9!
+x8!
+x7!
+x6!
+x5!
+x4!
+x3!
+x2!
+x1!
+x0!
+x/!
+x.!
+x-!
+x,!
+x+!
+x*!
+x)!
+x(!
+x'!
+x&!
+x%!
+x$!
+$end
+#12800000
+1!
+1V
+0$!
+0%!
+0&!
+0'!
+1(!
+1)!
+1*!
+1+!
+0,!
+1-!
+0.!
+0/!
+10!
+11!
+12!
+13!
+14!
+15!
+16!
+17!
+08!
+09!
+#20000000
+b1000111101001111111100 "
+b1010111101001111111100 "
+b1011111101001111111100 "
+b1011111001001111111100 "
+b1011111011001111111100 "
+b1011111011011111111100 "
+b1011111011010111111100 "
+b1011111011010011111100 "
+b1011111011010001111100 "
+b1011111011010001101100 "
+b1011111011010001101110 "
+b1011111011010001101111 "
+1U
+1X
+0^
+0d
+0f
+0h
+1j
+1p
+0r
+1z
+1|
+1"!
+19!
+18!
+05!
+02!
+01!
+00!
+1/!
+1,!
+0+!
+1'!
+1&!
+1$!
+#26880000
+0!
+0V
+1#!
+0!!
+1}
+1{
+1y
+1w
+1u
+0s
+1q
+1o
+0m
+1k
+0i
+0g
+0e
+1c
+1a
+0_
+1]
+1[
+1Y
+1W
+1?
+1@
+1A
+1B
+0C
+1D
+1E
+0F
+0G
+0H
+1I
+0J
+1K
+1L
+0M
+1N
+1O
+1P
+1Q
+1R
+0S
+1T
+1#
+0$
+1%
+1&
+1'
+1(
+1)
+0*
+1+
+1,
+0-
+1.
+0/
+00
+01
+12
+13
+04
+15
+16
+17
+18
+#40000000
+b1111111011010001101111 "
+b1111011011010001101111 "
+b1111001011010001101111 "
+b1111000011010001101111 "
+b1111000011110001101111 "
+b111000011110001101111 "
+b111000001110001101111 "
+b111000001110011101111 "
+b111000001110011101101 "
+0X
+1d
+1l
+0p
+0t
+0v
+0x
+1~
+0"!
+#46080000
+1!
+1V
+0$!
+1%!
+0(!
+0)!
+0*!
+0,!
+1.!
+12!
+08!
+#60000000
+b111000001110010101101 "
+b111000001110010001101 "
+b101000001110010001101 "
+b101000101110010001101 "
+b101000101100010001101 "
+b101000101101010001101 "
+b101000101101010001100 "
+b1000101101010001100 "
+b1100101101010001100 "
+b1110101101010001100 "
+b1111101101010001100 "
+b1111101001010001100 "
+b1111101001010001110 "
+0U
+1X
+0`
+0b
+1h
+0j
+0l
+1r
+1t
+1v
+1x
+0|
+0~
+09!
+18!
+04!
+03!
+10!
+0/!
+0.!
+1+!
+1*!
+1)!
+1(!
+0&!
+0%!
+#80000000
+b1111101001010000110 "
+b1111101001010000010 "
+b1111101001110000010 "
+b1001111101001110000010 "
+b1001111111001110000010 "
+b1001111111001100000010 "
+b1011111111001100000010 "
+b1011111111011100000010 "
+b1011011111011100000010 "
+b1011010111011100000010 "
+0Z
+0\
+0d
+1f
+1j
+1p
+0t
+0x
+1|
+1"!
+07!
+06!
+02!
+11!
+1/!
+1,!
+0*!
+0(!
+1&!
+1$!
+#83200000
+0!
+0V
+0y
+0u
+1s
+1i
+1g
+0c
+0a
+0]
+0[
+0W
+0?
+0A
+0B
+0D
+0E
+1G
+1H
+1M
+0N
+0P
+0'
+0)
+1*
+1/
+10
+02
+03
+05
+06
+08
+#100000000

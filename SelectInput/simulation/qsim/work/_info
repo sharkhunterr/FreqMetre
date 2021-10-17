@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Quartus/FrequenceMetre/SelectInput/simulation/qsim
+vSelectInput
+Z1 !s110 1634058299
+!i10b 1
+!s100 4EO0YQaJ0SWCPY0Z8CR6Z0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I28eFZ^a3^bLaI[@4HXk]33
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1634058298
+8SelectInput.vo
+FSelectInput.vo
+!i122 0
+L0 32 1178
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1634058299.000000
+!s107 SelectInput.vo|
+!s90 -work|work|SelectInput.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@select@input
+vSelectInput_vlg_vec_tst
+R1
+!i10b 1
+!s100 aE4bfjJA1Jk@1M_4Z1ADo1
+R2
+IgDjK@OmKn:bH3RY[FjE1f2
+R3
+R0
+w1634058297
+8SelectInput.vwf.vt
+FSelectInput.vwf.vt
+!i122 1
+L0 30 311
+R4
+r1
+!s85 0
+31
+R5
+!s107 SelectInput.vwf.vt|
+!s90 -work|work|SelectInput.vwf.vt|
+!i113 1
+R6
+R7
+n@select@input_vlg_vec_tst

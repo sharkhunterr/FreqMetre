@@ -1,0 +1,7 @@
+module CalculFreq(PerIn,FreqOut)
+
+input[13:0] PerIn;
+output[13:0] FreqOut;
+
+assign FreqOut = 1/PerOut;
+

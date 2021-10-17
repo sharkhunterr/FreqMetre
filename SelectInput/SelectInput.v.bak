@@ -1,0 +1,24 @@
+module ChoixAff(Sel,In1,In2,Out);
+
+input[21:0] Entree1;
+input[21:0] Entree2;
+input Choix;
+
+output[21:0] Out;
+
+reg[21:0] Out;
+
+always @(Choix)
+begin
+	if(Choix==1'b1)
+	begin
+		Out <= In1;
+	end
+	else
+	begin
+		Out <= In2;
+	end
+end
+
+endmodule
+		

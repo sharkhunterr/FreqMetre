@@ -1,0 +1,19 @@
+|DivFreq
+ClkIn => ClkOut~reg0.CLK
+ClkIn => Cnt[0].CLK
+ClkIn => Cnt[1].CLK
+ClkIn => Cnt[2].CLK
+ClkIn => Cnt[3].CLK
+ClkIn => Cnt[4].CLK
+ClkIn => Cnt[5].CLK
+ClkIn => Cnt[6].CLK
+ClkIn => Cnt[7].CLK
+ClkIn => Cnt[8].CLK
+ClkIn => Cnt[9].CLK
+ClkIn => Cnt[10].CLK
+ClkIn => Cnt[11].CLK
+ClkIn => Cnt[12].CLK
+ClkIn => Cnt[13].CLK
+ClkOut << ClkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

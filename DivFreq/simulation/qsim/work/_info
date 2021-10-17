@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Quartus_work/DivFreq/simulation/qsim
+vDivFreq
+Z0 !s110 1633166483
+!i10b 1
+!s100 lSinH=Tk>djnXIWG54Yoo0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I7cD8ml]gBl>@BOfh3:o9T0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Quartus/FrequenceMetre/DivFreq/simulation/qsim
+Z4 w1633166483
+Z5 8DivFreq.vo
+Z6 FDivFreq.vo
+!i122 6
+L0 32 726
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1633166483.000000
+Z9 !s107 DivFreq.vo|
+Z10 !s90 -work|work|DivFreq.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@div@freq
+vDivFreq_vlg_vec_tst
+R0
+!i10b 1
+!s100 IZNjD=5iKJOnQ;ASn4_XQ0
+R1
+IGk_S<V_0V8=mgR0JhKKUD0
+R2
+R3
+w1633166482
+8DivFreq.vwf.vt
+FDivFreq.vwf.vt
+!i122 7
+L0 30 26
+R7
+r1
+!s85 0
+31
+R8
+!s107 DivFreq.vwf.vt|
+!s90 -work|work|DivFreq.vwf.vt|
+!i113 1
+R11
+R12
+n@div@freq_vlg_vec_tst
+vhard_block
+R0
+!i10b 1
+!s100 2Ac]7zVO<5ICHKBRRFO^c0
+R1
+IoJ2AKU7F]S^bbzNn<f[5m0
+R2
+R3
+R4
+R5
+R6
+!i122 6
+L0 759 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12

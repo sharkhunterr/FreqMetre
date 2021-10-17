@@ -1,0 +1,42 @@
+|Aff7SegBcd
+Byte[0] => Mux0.IN19
+Byte[0] => Mux1.IN19
+Byte[0] => Mux2.IN19
+Byte[0] => Mux3.IN19
+Byte[0] => Mux4.IN19
+Byte[0] => Mux5.IN19
+Byte[0] => Mux6.IN19
+Byte[0] => Mux7.IN19
+Byte[1] => Mux0.IN18
+Byte[1] => Mux1.IN18
+Byte[1] => Mux2.IN18
+Byte[1] => Mux3.IN18
+Byte[1] => Mux4.IN18
+Byte[1] => Mux5.IN18
+Byte[1] => Mux6.IN18
+Byte[1] => Mux7.IN18
+Byte[2] => Mux0.IN17
+Byte[2] => Mux1.IN17
+Byte[2] => Mux2.IN17
+Byte[2] => Mux3.IN17
+Byte[2] => Mux4.IN17
+Byte[2] => Mux5.IN17
+Byte[2] => Mux6.IN17
+Byte[2] => Mux7.IN17
+Byte[3] => Mux0.IN16
+Byte[3] => Mux1.IN16
+Byte[3] => Mux2.IN16
+Byte[3] => Mux3.IN16
+Byte[3] => Mux4.IN16
+Byte[3] => Mux5.IN16
+Byte[3] => Mux6.IN16
+Byte[3] => Mux7.IN16
+Aff[0] << iAff[0].DB_MAX_OUTPUT_PORT_TYPE
+Aff[1] << iAff[1].DB_MAX_OUTPUT_PORT_TYPE
+Aff[2] << iAff[2].DB_MAX_OUTPUT_PORT_TYPE
+Aff[3] << iAff[3].DB_MAX_OUTPUT_PORT_TYPE
+Aff[4] << iAff[4].DB_MAX_OUTPUT_PORT_TYPE
+Aff[5] << iAff[5].DB_MAX_OUTPUT_PORT_TYPE
+Aff[6] << iAff[6].DB_MAX_OUTPUT_PORT_TYPE
+
+

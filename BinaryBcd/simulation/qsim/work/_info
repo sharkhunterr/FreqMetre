@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Quartus/FrequenceMetre/BinaryBcd/simulation/qsim
+vBinaryBcd
+Z0 !s110 1634487907
+!i10b 1
+!s100 NJ<e4YQ201cJfdUfnSL6=0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I4f5Kg>f3KLTBzTbWi?T3o1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Quartus_work/FreqMetre/BinaryBcd/simulation/qsim
+w1634487907
+Z4 8BinaryBcd.vo
+Z5 FBinaryBcd.vo
+!i122 16
+L0 32 5202
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1634487907.000000
+Z8 !s107 BinaryBcd.vo|
+Z9 !s90 -work|work|BinaryBcd.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@binary@bcd
+vBinaryBcd_vlg_vec_tst
+R0
+!i10b 1
+!s100 0[1K?a7NFgZMciP2m1i`i1
+R1
+Ig4_[@TaNGfI5Hf=2:iM9Q3
+R2
+R3
+w1634487906
+8BinaryBcd.vwf.vt
+FBinaryBcd.vwf.vt
+!i122 17
+L0 30 171
+R6
+r1
+!s85 0
+31
+R7
+!s107 BinaryBcd.vwf.vt|
+!s90 -work|work|BinaryBcd.vwf.vt|
+!i113 1
+R10
+R11
+n@binary@bcd_vlg_vec_tst
+vhard_block
+!s110 1633113262
+!i10b 1
+!s100 NNWFTQa@_I9z:XO?;o0DV2
+R1
+Iz4[2AeAVin56OeBJkP@]k1
+R2
+dC:/Quartus_work/FrequenceMetre/BinaryBcd/simulation/qsim
+w1633113261
+R4
+R5
+!i122 4
+L0 2285 34
+R6
+r1
+!s85 0
+31
+!s108 1633113262.000000
+R8
+R9
+!i113 1
+R10
+R11

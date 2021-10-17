@@ -1,0 +1,21 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Out1",
+					"strict" : false
+				},
+				{
+					"name" : "Out2",
+					"strict" : false
+				},
+				{
+					"name" : "Input",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

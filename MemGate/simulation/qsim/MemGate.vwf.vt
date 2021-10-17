@@ -1,0 +1,214 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/17/2021 10:54:16"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          MemGate
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module MemGate_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg Gate;
+reg [21:0] In;
+// wires                                               
+wire [21:0] Out;
+
+// assign statements (if any)                          
+MemGate i1 (
+// port map - connection between master ports and signals/registers   
+	.Gate(Gate),
+	.In(In),
+	.Out(Out)
+);
+initial 
+begin 
+#100000000 $finish;
+end 
+
+// Gate
+initial
+begin
+	Gate = 1'b0;
+	Gate = #12800000 1'b1;
+	Gate = #14080000 1'b0;
+	Gate = #19200000 1'b1;
+	Gate = #37120000 1'b0;
+end 
+// In[ 21 ]
+initial
+begin
+	In[21] = 1'b0;
+	In[21] = #20000000 1'b1;
+	In[21] = #20000000 1'b0;
+	In[21] = #40000000 1'b1;
+end 
+// In[ 20 ]
+initial
+begin
+	In[20] = 1'b0;
+	In[20] = #40000000 1'b1;
+	In[20] = #20000000 1'b0;
+end 
+// In[ 19 ]
+initial
+begin
+	In[19] = 1'b0;
+	In[19] = #20000000 1'b1;
+	In[19] = #40000000 1'b0;
+	In[19] = #20000000 1'b1;
+end 
+// In[ 18 ]
+initial
+begin
+	In[18] = 1'b0;
+	In[18] = #20000000 1'b1;
+end 
+// In[ 17 ]
+initial
+begin
+	In[17] = 1'b1;
+	In[17] = #40000000 1'b0;
+	In[17] = #20000000 1'b1;
+	In[17] = #20000000 1'b0;
+end 
+// In[ 16 ]
+initial
+begin
+	In[16] = 1'b1;
+	In[16] = #40000000 1'b0;
+	In[16] = #20000000 1'b1;
+end 
+// In[ 15 ]
+initial
+begin
+	In[15] = 1'b1;
+	In[15] = #40000000 1'b0;
+	In[15] = #20000000 1'b1;
+	In[15] = #20000000 1'b0;
+end 
+// In[ 14 ]
+initial
+begin
+	In[14] = 1'b1;
+	In[14] = #20000000 1'b0;
+	In[14] = #40000000 1'b1;
+end 
+// In[ 13 ]
+initial
+begin
+	In[13] = 1'b0;
+	In[13] = #20000000 1'b1;
+	In[13] = #20000000 1'b0;
+	In[13] = #40000000 1'b1;
+end 
+// In[ 12 ]
+initial
+begin
+	In[12] = 1'b1;
+end 
+// In[ 11 ]
+initial
+begin
+	In[11] = 1'b0;
+	In[11] = #40000000 1'b1;
+	In[11] = #20000000 1'b0;
+end 
+// In[ 10 ]
+initial
+begin
+	In[10] = 1'b0;
+	In[10] = #20000000 1'b1;
+	In[10] = #40000000 1'b0;
+	In[10] = #20000000 1'b1;
+end 
+// In[ 9 ]
+initial
+begin
+	In[9] = 1'b1;
+	In[9] = #20000000 1'b0;
+	In[9] = #40000000 1'b1;
+end 
+// In[ 8 ]
+initial
+begin
+	In[8] = 1'b1;
+	In[8] = #20000000 1'b0;
+	In[8] = #60000000 1'b1;
+end 
+// In[ 7 ]
+initial
+begin
+	In[7] = 1'b1;
+	In[7] = #20000000 1'b0;
+	In[7] = #20000000 1'b1;
+	In[7] = #40000000 1'b0;
+end 
+// In[ 6 ]
+initial
+begin
+	In[6] = 1'b1;
+	In[6] = #60000000 1'b0;
+end 
+// In[ 5 ]
+initial
+begin
+	In[5] = 1'b1;
+	In[5] = #60000000 1'b0;
+end 
+// In[ 4 ]
+initial
+begin
+	In[4] = 1'b1;
+	In[4] = #20000000 1'b0;
+end 
+// In[ 3 ]
+initial
+begin
+	In[3] = 1'b1;
+	In[3] = #80000000 1'b0;
+end 
+// In[ 2 ]
+initial
+begin
+	In[2] = 1'b1;
+	In[2] = #80000000 1'b0;
+end 
+// In[ 1 ]
+initial
+begin
+	In[1] = 1'b0;
+	In[1] = #20000000 1'b1;
+	In[1] = #20000000 1'b0;
+	In[1] = #20000000 1'b1;
+end 
+// In[ 0 ]
+initial
+begin
+	In[0] = 1'b0;
+	In[0] = #20000000 1'b1;
+	In[0] = #40000000 1'b0;
+end 
+endmodule
+

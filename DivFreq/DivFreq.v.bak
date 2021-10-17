@@ -1,0 +1,36 @@
+module DivFreq(ClkIn, Gate);
+
+
+parameter NBT = 6;
+parameter NBTON= 3;
+parameter POLARITY = 1;
+parameter BUS_SIZE = 14;
+
+input ClkIn;
+output Gate;
+reg Gate;
+reg[(BUS_SIZE-1):0] Cnt;
+
+always @(negedge(ClkIn))
+begin
+if(Cnt<NBT)
+
+begin
+	Cnt<=Cnt+1;
+end
+else
+begin
+	Cnt<=0;
+end
+
+if(Cnt<NBTON)
+begin
+	Gate<=POLARITY;
+end
+else
+begin
+	Gate<=~POLARITY;
+end
+end
+
+endmodule

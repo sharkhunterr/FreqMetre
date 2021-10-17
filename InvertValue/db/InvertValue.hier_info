@@ -1,0 +1,47 @@
+|InvertValue
+In[0] => Div0.IN35
+In[1] => Div0.IN34
+In[2] => Div0.IN33
+In[3] => Div0.IN32
+In[4] => Div0.IN31
+In[5] => Div0.IN30
+In[6] => Div0.IN29
+In[7] => Div0.IN28
+In[8] => Div0.IN27
+In[9] => Div0.IN26
+In[10] => Div0.IN25
+In[11] => Div0.IN24
+In[12] => Div0.IN23
+In[13] => Div0.IN22
+In[14] => Div0.IN21
+In[15] => Div0.IN20
+In[16] => Div0.IN19
+In[17] => Div0.IN18
+In[18] => Div0.IN17
+In[19] => Div0.IN16
+In[20] => Div0.IN15
+In[21] => Div0.IN14
+Out[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[4] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[5] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[6] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[7] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[8] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[9] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[10] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[11] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[12] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[13] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+Out[14] <= <GND>
+Out[15] <= <GND>
+Out[16] <= <GND>
+Out[17] <= <GND>
+Out[18] <= <GND>
+Out[19] <= <GND>
+Out[20] <= <GND>
+Out[21] <= <GND>
+
+
